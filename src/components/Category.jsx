@@ -1,5 +1,5 @@
 import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
-import { GiNoodles, GiChopsticks } from "react-icons/gi";
+import { GiNoodles, GiChopsticks, GiChiliPepper } from "react-icons/gi";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
@@ -22,6 +22,10 @@ function Category() {
         <SLink to={'/cuisine/chinese'}>
             <GiChopsticks/>
             <h4>Chinese</h4>
+        </SLink> 
+        <SLink to={'/cuisine/indian'}>
+            <GiChiliPepper/>
+            <h4>Indian</h4>
         </SLink>
     </List>
   )
@@ -39,7 +43,6 @@ const SLink = styled(NavLink)`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 2rem;
     text-decoration: none;
     background: linear-gradient(35deg, #494944, #313131);
     width: 6rem;
